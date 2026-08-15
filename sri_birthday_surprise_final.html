@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Meri Pyari Behenaa 💖</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@600;700;800&display=swap');
+*{box-sizing:border-box}
+:root{
+ --pink:#ff79ae;--deep:#6d356b;--lav:#c9b7ff;--cream:#fff9fc;--ink:#382b3d;
+}
+body{
+ margin:0;min-height:100vh;background:
+ radial-gradient(circle at 10% 10%,#fff 0 5%,transparent 22%),
+ linear-gradient(135deg,#ffeaf5,#eee7ff 48%,#e5f7ff);
+ color:var(--ink);font-family:'Nunito',sans-serif;overflow-x:hidden;
+}
+button{font-family:inherit}
+.screen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:25px;position:relative}
+.card{
+ width:min(94vw,540px);background:rgba(255,255,255,.84);backdrop-filter:blur(14px);
+ border:2px solid rgba(255,255,255,.9);border-radius:32px;padding:28px 22px;
+ box-shadow:0 20px 70px rgba(88,50,100,.18);text-align:center;position:relative;z-index:3;
+}
+.cat{position:fixed;font-size:48px;z-index:1;animation:float 5s ease-in-out infinite}
+.c1{left:3%;top:8%}.c2{right:4%;top:17%;animation-delay:1s}.c3{left:5%;bottom:8%;animation-delay:2s}.c4{right:5%;bottom:12%;animation-delay:3s}
+@keyframes float{50%{transform:translateY(-14px) rotate(5deg)}}
+h1,h2{font-family:'Baloo 2',cursive;margin:6px 0}
+h1{font-size:38px;line-height:1.05}.sub{color:#7c6c80;line-height:1.55}
+.sticker{font-size:64px;animation:bob 1.8s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-7px) rotate(3deg)}}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+.btn{
+ border:0;border-radius:18px;padding:13px 21px;font-size:16px;font-weight:800;cursor:pointer;
+ box-shadow:0 8px 18px rgba(90,50,100,.13);transition:.18s
+}
+.btn:hover{transform:translateY(-3px) scale(1.02)}.pink{background:var(--pink);color:#fff}.soft{background:#f1eafb;color:#5c4861}
+.progress{font-size:12px;color:#9b879d;margin-top:17px}
+.hidden{display:none!important}
+.terminal{
+ background:#17131d;color:#e9d9ff;border-radius:20px;padding:18px;text-align:left;
+ font-family:monospace;line-height:1.8;margin-top:15px
+}
+.bar{height:13px;background:#eadff0;border-radius:20px;overflow:hidden;margin:14px 0}.fill{height:100%;width:0;background:linear-gradient(90deg,#ff77ad,#b69cff);transition:width 1.2s}
+.gamebox{background:#fff4fa;border-radius:24px;padding:18px;margin-top:14px}
+.emoji-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin:16px auto;max-width:360px}
+.em{font-size:30px;border:0;background:#fff;border-radius:15px;padding:8px;cursor:pointer;box-shadow:0 4px 10px #e8d8e6}
+.riddle button{display:block;width:100%;margin:9px 0}
+.feedback{font-weight:800;min-height:24px;margin-top:8px}
+.code input{width:100%;padding:14px;border:2px solid #e7d8eb;border-radius:16px;text-align:center;font-size:20px;outline:none}
+.maze{width:250px;height:250px;margin:15px auto;border:8px solid #fff;border-radius:22px;background:#f5eafa;position:relative;box-shadow:inset 0 0 0 2px #dbc8e5}
+.player,.cake{position:absolute;font-size:30px;transition:.15s}.player{left:8px;top:8px}.cake{right:8px;bottom:8px}
+.maze:before,.maze:after{content:"";position:absolute;background:#b996bd;border-radius:5px}
+.maze:before{width:150px;height:12px;left:48px;top:80px;box-shadow:0 80px 0 #b996bd}
+.maze:after{height:150px;width:12px;left:115px;top:30px;box-shadow:80px 0 0 #b996bd}
+.pad{display:grid;grid-template-columns:repeat(3,55px);gap:6px;justify-content:center}.pad button{height:45px;border:0;border-radius:13px;background:#eee2f4;font-size:20px}
+.fullReveal{min-height:100vh;background:
+ radial-gradient(circle at 20% 20%,#fff8c9 0 3%,transparent 12%),
+ radial-gradient(circle at 80% 25%,#ffd3e7 0 4%,transparent 15%),
+ linear-gradient(135deg,#fff0f8,#eee7ff,#e7faff);display:flex;align-items:center;justify-content:center;padding:25px;position:relative;overflow:hidden}
+.burst{position:fixed;inset:0;pointer-events:none;z-index:5}
+.conf{position:absolute;font-size:28px;animation:fall 4s linear infinite;top:-40px}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+.revealCard{width:min(94vw,780px);text-align:center;position:relative;z-index:2}
+.big{font-family:'Baloo 2',cursive;font-size:clamp(48px,11vw,92px);line-height:.85;font-weight:800;
+ background:linear-gradient(90deg,#ff4f9a,#8c69ff,#ff6f9f);-webkit-background-clip:text;color:transparent;
+ text-shadow:0 7px 25px rgba(255,120,175,.2)}
+.name{font-family:'Baloo 2',cursive;font-size:clamp(32px,7vw,58px);color:#6a3c78;margin-top:15px}
+.wish{background:rgba(255,255,255,.83);border:2px solid #fff;border-radius:28px;padding:25px;margin:24px auto;max-width:680px;line-height:1.75;font-size:17px;box-shadow:0 15px 50px rgba(100,65,110,.13)}
+.signature{font-family:'Baloo 2',cursive;font-size:25px;color:#9b4c85}
+.paw{font-size:42px}
+.small{font-size:13px;color:#9c8b9f}
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+const app=document.getElementById('app');
+const cats=['🐱','😽','😻','🐈','😺'];
+let step=0, score=0, found=0, px=8, py=8;
+
+function frame(inner){
+ document.body.className='';
+ document.body.innerHTML=`
+ <div class="cat c1">🐱</div><div class="cat c2">🎀🐱</div>
+ <div class="cat c3">🐾</div><div class="cat c4">😽</div>
+ <div class="screen"><div class="card">${inner}</div></div>`;
+}
+function intro(){
+ frame(`<div class="sticker">🚨😺</div><h1>⚠️ WARNING ⚠️</h1>
+ <p class="sub">You have opened a suspiciously cute website.<br>Visitor detected: <b>Cute Sisso</b> 👀💗</p>
+ <div class="terminal">> scanning visitor...<br>> cuteness detected ✓<br>> birthday detected ✓<br>> silliness level: VERY HIGH 😭<br>> status: <b>SISSO FOUND</b> 💖</div>
+ <div class="btns"><button class="btn soft" onclick="alert('Too late 😭 You are already inside.')">EXIT 😭</button>
+ <button class="btn pink" onclick="permission()">Continue Anyway 👀</button></div>`);
+}
+function permission(){
+ frame(`<div class="sticker">🐱🎀</div><h1>Quick Permission 👀</h1>
+ <p class="sub">Can I waste approximately 2 minutes of your life with completely unnecessary nonsense?</p>
+ <div class="btns"><button class="btn pink" onclick="game1()">YES 💗</button>
+ <button class="btn soft" onclick="game1()">NO 😐</button></div><p class="small">Don't worry. No cats were harmed. 🐾</p>`);
+}
+function game1(){
+ frame(`<div class="sticker">🔎🐱</div><h1>CAT HUNT 🐾</h1>
+ <p class="sub">Find <b>3 cats</b>. Everything else is suspicious. 😭</p>
+ <div class="emoji-grid" id="grid"></div><div class="feedback" id="fb">Cats found: 0 / 3</div>`);
+ const g=document.getElementById('grid');
+ let arr=['🌸','⭐','🍰','🦋','💗','🐱','🎀','✨','🍓','🐾','🌷','😺','🎁','💫','🍪','🩷','🌙','🐱','☁️','🎉','🐱','🫶🏻','🍫','🌈','💐'];
+ arr.sort(()=>Math.random()-.5);
+ arr.forEach(x=>{let b=document.createElement('button');b.className='em';b.textContent=x;b.onclick=()=>{if(x==='🐱'){b.disabled=true;b.style.opacity=.35;found++;document.getElementById('fb').textContent=`Cats found: ${found} / 3`;if(found===3)setTimeout(game2,650)}else{b.style.transform='rotate(12deg)';document.getElementById('fb').textContent='Wrong! 😭 The cat is hiding somewhere else...'}};g.appendChild(b)});
+}
+function game2(){
+ frame(`<div class="sticker">🧠🎀</div><h1>VERY IMPORTANT QUIZ</h1>
+ <div class="gamebox"><p><b>Who is officially the cutest person in this website?</b> 👀</p>
+ <div class="btns"><button class="btn soft" onclick="quiz('A')">A. A Cat 🐱</button><button class="btn soft" onclick="quiz('B')">B. Anya 🎀</button>
+ <button class="btn pink" onclick="quiz('C')">C. Sri 👑</button><button class="btn soft" onclick="quiz('D')">D. Me 🗿</button></div><div id="qf" class="feedback"></div></div>`);
+}
+function quiz(a){let q=document.getElementById('qf');if(a==='C'){q.textContent='CORRECT. Obviously. 😭👑💗';setTimeout(riddle,800)}else q.textContent='Wrong answer. Please reconsider your life choices. 😂';}
+function riddle(){
+ frame(`<div class="sticker">🤔🐱</div><h1>RIDDLE TIME</h1><p class="sub">What gets one year older today but somehow becomes even more adorable? 👀</p>
+ <div class="riddle"><button class="btn soft" onclick="wrong(this)">A. My Wi-Fi router 📡</button>
+ <button class="btn soft" onclick="wrong(this)">B. A potato 🥔</button>
+ <button class="btn pink" onclick="maze()">C. My Pyari Behnaa Sri 🥰</button>
+ <button class="btn soft" onclick="wrong(this)">D. A traffic signal 🚦</button></div><div id="rf" class="feedback"></div>`);
+}
+function wrong(){document.getElementById('rf').textContent='😭 NOOO. Nice try though.'}
+function maze(){
+ frame(`<div class="sticker">🐱🎂</div><h1>SAVE THE CAKE! 🎂</h1><p class="sub">Help the little cat reach the birthday cake.</p>
+ <div class="maze"><div id="pl" class="player">🐱</div><div class="cake">🎂</div></div>
+ <div class="pad"><span></span><button onclick="move(0,-25)">⬆️</button><span></span>
+ <button onclick="move(-25,0)">⬅️</button><button onclick="move(0,25)">⬇️</button><button onclick="move(25,0)">➡️</button></div>
+ <div id="mf" class="feedback">Use the arrows! 🐾</div>`);
+}
+function move(dx,dy){
+ px=Math.max(8,Math.min(210,px+dx));py=Math.max(8,Math.min(210,py+dy));
+ // simple route; walls are visual only, so the game stays friendly
+ document.getElementById('pl').style.left=px+'px';document.getElementById('pl').style.top=py+'px';
+ if(px>175&&py>175){document.getElementById('mf').textContent='CAKE SAVED! 🎂😭💗';setTimeout(error,900)}
+}
+function error(){
+ frame(`<div class="sticker">🚨😳</div><h1>ERROR 404</h1><p class="sub"><b>Birthday Wishes Not Found.</b></p>
+ <div class="terminal">SYSTEM MESSAGE:<br>Normal birthday wishes are too boring for Sri.<br><br>Installing <b>BIRTHDAY MODE</b> is recommended.</div>
+ <div class="btns"><button class="btn pink" onclick="secret()">INSTALL NOW 🎀</button><button class="btn soft" onclick="secret()">Maybe Later 😭</button></div>`);
+}
+function secret(){
+ frame(`<div class="sticker">🔐🐱</div><h1>SECRET CODE</h1><p class="sub">Hint: It's the birthday girl's name. 👀💗</p>
+ <div class="code"><input id="code" maxlength="10" placeholder="Type here..."><button class="btn pink" style="margin-top:12px" onclick="unlock()">UNLOCK SURPRISE 🔓</button><div id="cf" class="feedback"></div></div>`);
+}
+function unlock(){
+ let v=document.getElementById('code').value.trim().toLowerCase();
+ if(v==='sri'||v==='shrishti'||v==='sisso'||v==='meripyaribehenaa'){loading()}else document.getElementById('cf').textContent='Hmmmm... suspicious typing detected. 😂 Try again!';
+}
+function loading(){
+ frame(`<div class="sticker">🎀🐱</div><h1>Activating Birthday Mode...</h1><div class="terminal" id="load">> starting...</div><div class="bar"><div id="fill" class="fill"></div></div><p class="sub">Please wait. Important cuteness is loading. 😭</p>`);
+ let lines=['Balloons ✓','Cake ✓','Confetti ✓','Cute Cats ✓','Anya energy ✓','Happiness ✓','Extra special wishes ✓'];
+ let n=0;let t=setInterval(()=>{n++;document.getElementById('load').innerHTML=lines.slice(0,n).join('<br>');document.getElementById('fill').style.width=(n/lines.length*100)+'%';if(n===lines.length){clearInterval(t);setTimeout(countdown,900)}},500);
+}
+function countdown(){
+ frame(`<div class="sticker">👀💗</div><h1>Are You Ready?</h1><div style="font-family:'Baloo 2';font-size:90px;color:#ff65a5" id="count">3</div><p class="sub">Something very important is about to happen...</p>`);
+ let n=3;let t=setInterval(()=>{n--;document.getElementById('count').textContent=n;if(n===0){clearInterval(t);setTimeout(reveal,650)}},850);
+}
+function reveal(){
+ document.body.innerHTML=`<div class="fullReveal"><div class="burst" id="burst"></div><div class="revealCard">
+ <div class="paw">🐱🎀✨🎂✨🎀🐱</div>
+ <div class="big">HAPPY<br>BIRTHDAY</div>
+ <div class="name">💗 Meri Pyari Behenaa — Sisso 💗</div>
+ <div style="font-size:70px;margin:18px 0">🎂🎉🎈🥳🎊💐🐱</div>
+ <div class="wish"><b>Happy Birthday to Meri Pyari Behenaa! 🥹💖🎂</b><br><br>
+ I hope aaj ka din tumhare liye bohot saari happiness, hasi, cute moments aur beautiful memories lekar aaye. 🌸✨
+ May you always stay happy, healthy and blessed, and may all the things you quietly wish for slowly find their way to you. 🫶🏻💐
+ You deserve so many good things, so many genuine smiles and so many moments where you can just say,
+ <i>“Haan bhai, life achhi chal rahi hai.”</i> 😭🤌🏻💗
+ <br><br>
+ Bas hamesha aisi hi rehna — thodi cute, thodi pagal, thodi annoying 😭🎀
+ aur obviously meri <b>Pyari Behenaa</b>. 🥹💗
+ <br><br><b>Have the happiest birthday ever, Sisso! 🎂🎉💖🦋🌷</b>
+ </div>
+ <div class="signature">Okayyy birthday girl, ab smile karo... itni mehnat se website banayi hai. 😭🙌🏻💗</div>
+ <p class="small" style="margin-top:18px;font-size:15px;font-weight:800;color:#9a5d91">
+   Psst... 👀👇 Don't leave yet. Thoda sa aur neeche dekho... something cute is hiding there. 🎁🐱
+ </p>
+ <div class="btns">
+   <button class="btn pink" onclick="openGift()">🎁 One Last Thing...</button>
+   <button class="btn soft" onclick="catAttack()">🐱 Press If You Want More Cats</button>
+ </div>
+ <div id="afterReveal"></div>
+ </div></div>`;
+ let emojis=['🎉','🎈','💗','✨','🌸','🎀','🐱','💐','🦋','🎊','💖','🥳'];
+ const b=document.getElementById('burst');
+ for(let i=0;i<55;i++){let s=document.createElement('span');s.className='conf';s.textContent=emojis[i%emojis.length];
+ s.style.left=Math.random()*100+'%';s.style.animationDelay=(Math.random()*3)+'s';s.style.animationDuration=(3+Math.random()*3)+'s';b.appendChild(s)}
+}
+function openGift(){
+ const box=document.getElementById('afterReveal');
+ box.innerHTML=`<div class="gamebox" style="margin-top:24px"><div style="font-size:55px">🎁</div>
+ <h2>Wait... there's actually one more thing 👀</h2>
+ <p class="sub">Itni easily website khatam thodi hone wali thi 😭</p><p><b>Choose your birthday reward:</b></p>
+ <div class="btns"><button class="btn soft" onclick="reward('cake')">🍰 Virtual Cake</button>
+ <button class="btn soft" onclick="reward('hug')">🫂 Virtual Hug</button>
+ <button class="btn pink" onclick="reward('cat')">🐱 Unlimited Cats</button></div>
+ <button class="btn soft" style="margin-top:12px" onclick="backToWish()">↑ Back to Birthday Wish</button></div>`;
+ setTimeout(()=>box.scrollIntoView({behavior:'smooth',block:'center'}),80);
+}
+function reward(type){
+ const box=document.getElementById('afterReveal');
+ const data={cake:['🎂','Virtual Cake Unlocked!','Cake kha lena real wala bhi. Website wala toh sirf dekhne ke kaam ka hai. 😭🍰'],
+ hug:['🫂','Virtual Hug Delivered!','Sending one big sister-level hug through this very scientifically advanced website. 🫂💗'],
+ cat:['🐱','CAT OVERLOAD ACTIVATED!','Congratulations. You have made a terrible decision. 😭🐱🐱🐱🐱🐱']};
+ const d=data[type];
+ box.innerHTML=`<div class="gamebox"><div style="font-size:65px">${d[0]}</div><h2>${d[1]}</h2><p class="sub">${d[2]}</p>
+ <button class="btn pink" onclick="finalNote()">Okay now I'm actually done 😭</button></div>`;
+ if(type==='cat') catRain();
+}
+function finalNote(){
+ const box=document.getElementById('afterReveal');
+ box.innerHTML=`<div class="gamebox"><div style="font-size:55px">🐱💗🐱</div><h2>Bas ek chhoti si baat...</h2>
+ <p class="sub">Thank you for being such a lovely Sisso. 🥹💗<br>
+ Online ho ya miles away, kuch log genuinely family jaise lagte hain — and you're one of them. 🫶🏻
+ <br><br><b>So once again... Happy Birthday, Meri Pyari Behenaa! 🎂🎀</b></p>
+ <div class="signature">Now go enjoy your birthday, Sisso. 😭🙌🏻💗</div>
+ <p class="small">P.S. Yes, you really clicked through all that nonsense. 😂🐾</p></div>`;
+ catRain();
+}
+function catAttack(){
+ const box=document.getElementById('afterReveal');
+ box.innerHTML=`<div class="gamebox"><div style="font-size:58px">🐱🐱🐱</div><h2>You asked for it. 😭</h2>
+ <p class="sub">Cat mode has been permanently activated.</p><button class="btn pink" onclick="finalNote()">🐾 Accept My Fate</button>
+ <button class="btn soft" style="margin-top:10px" onclick="backToWish()">↑ Back to Birthday Wish</button></div>`;
+ catRain();
+}
+function backToWish(){
+ const wish=document.querySelector('.wish');
+ if(wish) wish.scrollIntoView({behavior:'smooth',block:'center'});
+}
+function catRain(){
+ const cats=['🐱','😺','😸','😻','😽','🐾','🎀'];
+ for(let i=0;i<25;i++){const s=document.createElement('span');s.textContent=cats[Math.floor(Math.random()*cats.length)];
+ s.style.position='fixed';s.style.zIndex='20';s.style.left=Math.random()*100+'vw';s.style.top='-40px';
+ s.style.fontSize=(25+Math.random()*25)+'px';s.style.transition='transform 2.8s linear, opacity 2.8s linear';
+ document.body.appendChild(s);
+ setTimeout(()=>{s.style.transform=`translateY(${110+Math.random()*30}vh) rotate(${Math.random()*500-250}deg)`;s.style.opacity='0'},30);
+ setTimeout(()=>s.remove(),3000)}
+}
+
+intro();
+</script>
+</body>
+</html>
